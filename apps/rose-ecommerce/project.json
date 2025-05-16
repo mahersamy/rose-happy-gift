@@ -22,7 +22,9 @@
             "input": "apps/rose-ecommerce/public"
           }
         ],
-        "styles": ["apps/rose-ecommerce/src/styles.scss"],
+        "styles": [
+          "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+          "apps/rose-ecommerce/src/styles.scss"],
         "scripts": [],
         "server": "apps/rose-ecommerce/src/main.server.ts",
         "ssr": {
