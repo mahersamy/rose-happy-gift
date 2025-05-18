@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { CarouselItemComponent } from "../carousel-item/carousel-item.component";
 
 @Component({
   selector: 'app-special-slider',
-  imports: [CarouselModule],
+  imports: [CarouselModule, CarouselItemComponent],
   templateUrl: './special-slider.component.html',
   styleUrl: './special-slider.component.scss'
 })

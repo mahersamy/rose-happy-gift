@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 15%;
+  bottom: 5%;
   display: flex;
   justify-content: center;
   z-index: 20;
@@ -29,7 +29,7 @@
 
 ::ng-deep .owl-theme .owl-nav{
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 10%;
 }
 ::ng-deep .owl-theme .owl-nav .owl-prev,
