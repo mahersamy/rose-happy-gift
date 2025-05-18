@@ -12,8 +12,8 @@
       "options": {
         "fileReplacements": [
           {
-                "replace": "./src/app/core/environment/environment.ts",
-                "with": "./src/app/core/environment/environment.prod.ts"
+            "replace": "apps/rose-ecommerce/src/app/core/environment/environment.ts",
+            "with": "apps/rose-ecommerce/src/app/core/environment/environment.prod.ts"
           }
         ],
         "outputPath": "dist/apps/rose-ecommerce",
