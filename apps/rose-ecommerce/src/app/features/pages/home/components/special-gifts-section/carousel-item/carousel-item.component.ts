@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { MainButtonComponent } from "../../../../../shared/components/ui/main-button/main-button.component";
+import { MainButtonComponent } from 'apps/rose-ecommerce/src/app/shared/components/ui/main-button/main-button.component';
 
 @Component({
   selector: 'app-carousel-item',
