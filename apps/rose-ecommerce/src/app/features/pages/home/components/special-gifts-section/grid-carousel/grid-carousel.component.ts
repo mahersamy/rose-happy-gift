@@ -15,7 +15,7 @@ import { GridBottomItem } from 'apps/rose-ecommerce/src/app/features/interfaces/
   styleUrl: './grid-carousel.component.scss',
 })
 export class GridCarouselComponent {
-  gridBottomItems= [
+  gridBottomItems:Array<GridBottomItem>= [
     {
       head: 'Gifts Box',
       description: 'Awesome Gifts BoxCollectons',

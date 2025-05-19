@@ -8,6 +8,8 @@ import { MainButtonComponent } from 'apps/rose-ecommerce/src/app/shared/componen
   styleUrl: './carousel-item.component.scss'
 })
 export class CarouselItemComponent {
-  img=input.required<string>()
-
+  head = input.required<string>();
+  descrption = input.required<string>();
+  headerTitle = input.required<string>();
+  img = input.required<string>();
 }
