@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { SpecialSliderComponent } from "../special-slider/special-slider.component";
 import { TallElementGridComponent } from "../tall-element-grid/tall-element-grid.component";
 import { BottomGridCardComponent } from "../bottom-grid-card/bottom-grid-card.component";
+import { SpecialSliderComponent } from '../special-slider/special-slider.component';
 
 @Component({
   selector: 'app-grid-carousel',

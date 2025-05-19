@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GridCarouselComponent } from "./components/grid-carousel/grid-carousel.component";
+import { GridCarouselComponent } from "./components/special-gifts-section/grid-carousel/grid-carousel.component";
 import { FeaturesComponent } from "./components/features-section/features/features.component";
 
 @Component({
