@@ -11,27 +11,12 @@
     <app-special-slider></app-special-slider>
   </div>
 
-  <!-- Bottom Left Card -->
-  <app-bottom-grid-card
-    head="Gifts Box"
-    desc="Awesome Gifts BoxCollectons"
-    badgeText="Discover Now"
-    img="/images/Confetti-lying-near-present.png"
-  ></app-bottom-grid-card>
-
-  <!-- Bottom Center Card -->
-  <app-bottom-grid-card
-    head="Occasion Gifts"
-    desc="Best Occasion Gifts Collections"
-    badgeText="Discover Now"
-    img="/images/Top-view-hand-holding-gift-box-on-work-space.png"
-  ></app-bottom-grid-card>
-
-  <!-- Bottom Right Card -->
-  <app-bottom-grid-card
-    head="Occasion Gifts"
-    desc="Combo Sets Gift Box Up To 50% Off"
-    badgeText="Discover Now"
-    img="/images/Christmas-shopping-composition-with-presents-and-cart.png"
-  ></app-bottom-grid-card>
+  @for (item of gridBottomItems; track $index) {
+    <app-bottom-grid-card
+    [head]="item.head"
+    [desc]="item.description"
+    [badgeText]="item.badgeText"
+    [img]="item.img"
+    ></app-bottom-grid-card>
+  }
 </section>
