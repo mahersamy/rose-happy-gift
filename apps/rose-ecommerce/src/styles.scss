@@ -10,7 +10,7 @@ $pink-2: #F84CBF;
 $pink-3: #F87CD1;
 $pink-4: #F8A6DE;
 $pink-5: #F8C7E9;
-$pink-6: #F8D9F0;
+$pink-6: #FEEDF7;
 
 // Navy shades
 $navy-1: #160E4B;
@@ -41,6 +41,12 @@ $green-6: #F0FDF4;
 }
 .color-pink-1{
     color: $pink-1;
+}
+.bg-color-pink-6 {
+  background-color: $pink-6;
+}
+.color-pink-6{
+    color: $pink-6;
 }
 
 .bg-color-navy-1 {

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { SpecialSliderComponent } from "./components/special-slider/special-slider.component";
 import { GridCarouselComponent } from "./components/grid-carousel/grid-carousel.component";
+import { FeaturesComponent } from "./components/features-section/features/features.component";
 
 @Component({
   selector: 'app-home',
-  imports: [SpecialSliderComponent, GridCarouselComponent],
+  imports: [GridCarouselComponent, FeaturesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

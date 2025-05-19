@@ -1,0 +1,13 @@
+<div class="flex justify-center items-center flex-col lg:flex-row">
+    <div class="bg-color-pink-1 rounded-[50%] flex  justify-center items-center p-3 mr-3 w-16">
+        <img [src]="img()" [alt]="head()" class="w-32">
+    </div>
+    <div class="content-section flex flex-col text-center lg:text-start mt-4 md:m-0">
+        <p class="text-xl font-semibold">
+            {{head()}}
+        </p>
+        <p class="font-light">
+            {{desc()}}
+        </p>
+    </div>
+</div>
