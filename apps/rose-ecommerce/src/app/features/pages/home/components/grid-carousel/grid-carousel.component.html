@@ -1,8 +1,9 @@
-<section class="special-grid grid grid-cols-1 md:grid-cols-3 grid-rows-none md:grid-rows-3 gap-4 p-4 max-w-screen-xl mx-auto container">
+<section
+  class="special-grid grid grid-cols-1 md:grid-cols-3 grid-rows-none md:grid-rows-3 gap-4 p-4 max-w-screen-xl mx-auto container"
+>
   <!-- Left - Tall Column with Slider -->
-  <div class="md:row-span-2 bg-white rounded-lg overflow-hidden relative">
-    <img src="/images/gifts-with-white-ribbon.png" alt="" class="w-full h-full object-cover" />
-  
+  <div class="md:row-span-2">
+    <app-tall-element-grid></app-tall-element-grid>
   </div>
 
   <!-- Top Right Card -->
@@ -11,17 +12,26 @@
   </div>
 
   <!-- Bottom Left Card -->
-  <div class="bg-white rounded-lg overflow-hidden">
-    <img src="/images/Confetti-lying-near-present.png" alt="" class="w-full h-full object-cover" />
-  </div>
+  <app-bottom-grid-card
+    head="Gifts Box"
+    desc="Awesome Gifts BoxCollectons"
+    badgeText="Discover Now"
+    img="/images/Confetti-lying-near-present.png"
+  ></app-bottom-grid-card>
 
   <!-- Bottom Center Card -->
-  <div class="bg-white rounded-lg overflow-hidden">
-    <img src="/images/Top-view-hand-holding-gift-box-on-work-space.png" alt="" class="w-full h-full object-cover" />
-  </div>
+  <app-bottom-grid-card
+    head="Occasion Gifts"
+    desc="Best Occasion Gifts Collections"
+    badgeText="Discover Now"
+    img="/images/Top-view-hand-holding-gift-box-on-work-space.png"
+  ></app-bottom-grid-card>
 
   <!-- Bottom Right Card -->
-  <div class="bg-white rounded-lg overflow-hidden">
-    <img src="/images/Christmas-shopping-composition-with-presents-and-cart.png" alt="" class="w-full h-full object-cover" />
-  </div>
+  <app-bottom-grid-card
+    head="Occasion Gifts"
+    desc="Combo Sets Gift Box Up To 50% Off"
+    badgeText="Discover Now"
+    img="/images/Christmas-shopping-composition-with-presents-and-cart.png"
+  ></app-bottom-grid-card>
 </section>
