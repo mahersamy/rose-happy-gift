@@ -1,11 +1,15 @@
-<section class="features-section  p-4 max-w-screen-xl mx-auto container">
-  <div class="bg-color-pink-6 ">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-8 p-10">
-    <app-feature-item img="/icons/delivery.svg" head="Free Delivery" desc="Orders Over $120"></app-feature-item>
-    <app-feature-item img="/icons/refund.svg" head="Get Refund" desc="Within 30 Days Returns"></app-feature-item>
-    <app-feature-item img="/icons/payment.svg" head="Safe Payment" desc="100% Secure Payment"></app-feature-item>
-    <app-feature-item img="/icons/support.svg" head="24/7 Support" desc="Feel Free To Call Us"></app-feature-item>
+<section class="features-section p-4 max-w-screen-xl mx-auto container">
+  <div class="bg-color-pink-6 rounded-[1.25rem]">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center gap-8 p-10"
+    >
+      @for (item of featureItems; track $index) {
+      <app-feature-item
+        [img]="item.img"
+        [head]="item.head"
+        [desc]="item.description"
+      ></app-feature-item>
+      }
+    </div>
   </div>
-  </div>
-  
 </section>
