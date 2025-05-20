@@ -9,6 +9,7 @@ import { Component, input, output } from '@angular/core';
 export class MainButtonComponent {
 press=output()
 text=input.required<string>();
+arrow=input<boolean>(true);
 
 
 
