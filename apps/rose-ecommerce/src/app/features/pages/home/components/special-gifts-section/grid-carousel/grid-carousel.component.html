@@ -1,0 +1,22 @@
+<section
+  class="special-grid grid grid-cols-1 md:grid-cols-3 grid-rows-none md:grid-rows-3 gap-4 p-4 max-w-screen-xl mx-auto container"
+>
+  <!-- Left - Tall Column with Slider -->
+  <div class="md:row-span-2">
+    <app-tall-element-grid></app-tall-element-grid>
+  </div>
+
+  <!-- Top Right Card -->
+  <div class="md:col-span-2 md:row-span-2 bg-white rounded-lg overflow-hidden">
+    <app-special-slider></app-special-slider>
+  </div>
+
+  @for (item of gridBottomItems; track $index) {
+    <app-bottom-grid-card
+    [head]="item.head"
+    [desc]="item.description"
+    [badgeText]="item.badgeText"
+    [img]="item.img"
+    ></app-bottom-grid-card>
+  }
+</section>

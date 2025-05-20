@@ -10,10 +10,10 @@ $pink-2: #F84CBF;
 $pink-3: #F87CD1;
 $pink-4: #F8A6DE;
 $pink-5: #F8C7E9;
-$pink-6: #F8D9F0;
+$pink-6: #FEEDF7;
 
 // Navy shades
-$navy-1: #1A1A40;
+$navy-1: #160E4B;
 $navy-2: #23235B;
 $navy-3: #2C2C77;
 $navy-4: #3B3B8F;
@@ -42,15 +42,28 @@ $green-6: #F0FDF4;
 .color-pink-1{
     color: $pink-1;
 }
+.bg-color-pink-6 {
+  background-color: $pink-6;
+}
+.color-pink-6{
+    color: $pink-6;
+}
+
+.bg-color-navy-1 {
+  background-color: $navy-1;
+}
+.color-navy-1{
+    color: $navy-1;
+}
 
 
 // fonts class
 
 
 .font-size-80{
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .font-size-64{
-  font-size: 80px;
+  font-size: 4rem;
 }
