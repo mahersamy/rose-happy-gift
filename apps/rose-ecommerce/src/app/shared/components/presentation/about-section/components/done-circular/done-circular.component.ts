@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-done-circular',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './done-circular.component.scss'
 })
 export class DoneCircularComponent {
+  text=input.required<string>()
 
 }

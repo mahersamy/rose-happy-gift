@@ -19,16 +19,19 @@
       </p>
       <app-main-button class="mt-6" text="Discover More "></app-main-button>
       <div
-        class="cheack-section flex flex-col justify-start items-start gap-4 mt-2"
+        class="cheack-section flex flex-col justify-start items-start gap-4 mt-6"
       >
-        <div class="cirucalr-item flex flex-col md:flex-row gap-4">
-          <app-done-circular></app-done-circular>
-          <app-done-circular></app-done-circular>
+        <div class="cirucalr-item grid grid-cols-1  sm:grid-cols-2  gap-4">
+          @for (item of doneTextArr; track $index) {
+            
+            <app-done-circular [text]="item"></app-done-circular>
+
+          }
+         
+          
+          
         </div>
-        <div class="cirucalr-item flex flex-col md:flex-row gap-4">
-          <app-done-circular></app-done-circular>
-          <app-done-circular></app-done-circular>
-        </div>
+        
       </div>
     </div>
   </div>
