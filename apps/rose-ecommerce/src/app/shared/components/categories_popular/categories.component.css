@@ -1,0 +1,14 @@
+::ng-deep .p-carousel-indicator-list {
+  display: none !important;
+}
+::ng-deep .p-carousel-item{
+  cursor: pointer;
+   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+::ng-deep .p-carousel{
+  text-align: center;
+}
+
+ 

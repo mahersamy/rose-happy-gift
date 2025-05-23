@@ -1,0 +1,4 @@
+ ::ng-deep .p-rating-icon {
+  color: #f59e0b !important;  
+  cursor: text;
+}

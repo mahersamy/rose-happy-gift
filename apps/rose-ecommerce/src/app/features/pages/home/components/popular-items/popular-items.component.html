@@ -1,0 +1,46 @@
+ <section class="container ">
+    <div class="header lg:flex justify-between items-center mb-10">
+        <div class="sectionTitle">
+            <app-section-title/>
+        </div>
+        <div class="category mt-10 lg:w-1/2">
+           <app-categories  (catId)="handleProductsByCategory($event)"/>     
+        </div>
+    </div>
+    <div class="hidden lg:grid lg:grid-cols-4 lg:gap-4">
+        @for (item of products.products; track $index) {
+      <app-product-item [product]="item"/>
+        }
+        @empty {
+          <div class="flex justify-center items-center font-extrabold h-svh w-svw">
+            <p>No items found in this category</p>
+          </div>
+        }
+    </div>
+
+
+ <!-- Carousel for small screens -->
+  
+    <div class="block lg:hidden">
+    @for (item of groupedProducts; track $index) {
+      <p-carousel
+        [value]="item"
+        [numVisible]="1"
+        [numScroll]="1"
+        [showNavigators]="true"
+        [circular]="true"
+        [showIndicators]="false"
+      >
+        <ng-template let-item pTemplate="item">
+          <app-product-item [product]="item" />
+        </ng-template>
+      </p-carousel>
+    }@empty {
+          <div class="flex justify-center items-center font-extrabold h-svh w-svw">
+            <p>No items found in this category</p>
+          </div>
+        }
+    </div>
+
+</section>
+

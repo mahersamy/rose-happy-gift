@@ -1,0 +1,15 @@
+ <p-carousel
+  [value]="categories"
+  [numVisible]="4"
+  [numScroll]="1"
+  [circular]="true"
+  [autoplayInterval]="0"
+  styleClass="no-indicators"
+ >
+  
+      <ng-template  pTemplate="item" let-category>
+             <span class="text-textColorMain font-bold  m-2  " (click)="sendCatId(category.id)" >   {{ category.name }}</span>
+      </ng-template>
+ </p-carousel>
+
+ 
