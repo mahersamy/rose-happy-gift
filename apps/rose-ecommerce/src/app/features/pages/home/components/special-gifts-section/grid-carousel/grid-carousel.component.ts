@@ -32,7 +32,7 @@ export class GridCarouselComponent {
       head: 'Occasion Gifts',
       description: 'Best Occasion Gifts Collections',
       badgeText: 'Discover Now',
-      img: '/images/Top-view-hand-holding-gift-box-on-work-space.png',
+      img: '/images/Christmas-shopping-composition-with-presents-and-cart.png',
     },
   ];
 }

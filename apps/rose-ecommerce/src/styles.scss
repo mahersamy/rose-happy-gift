@@ -21,7 +21,7 @@ $navy-5: #5C5CA8;
 $navy-6: #A6A6C3;
 
 // Purple shades
-$purple-1: #7C3AED;
+$purple-1: #8C52FF;
 $purple-2: #8B5CF6;
 $purple-3: #A78BFA;
 $purple-4: #C4B5FD;
@@ -39,31 +39,34 @@ $green-6: #F0FDF4;
 .bg-color-pink-1 {
   background-color: $pink-1;
 }
-.color-pink-1{
-    color: $pink-1;
+.bg-color-purple-1 {
+  background-color: $purple-1;
 }
 .bg-color-pink-6 {
   background-color: $pink-6;
 }
+.bg-color-navy-1 {
+  background-color: $navy-1;
+}
+
+
+
+.border-color-pink-1{
+  border-color: $pink-1;
+}
+
+
 .color-pink-6{
     color: $pink-6;
 }
 
-.bg-color-navy-1 {
-  background-color: $navy-1;
-}
 .color-navy-1{
     color: $navy-1;
 }
-
-
-// fonts class
-
-
-.font-size-80{
-  font-size: 5rem;
+.color-pink-1{
+    color: $pink-1;
 }
 
-.font-size-64{
-  font-size: 4rem;
-}
+
+
+
