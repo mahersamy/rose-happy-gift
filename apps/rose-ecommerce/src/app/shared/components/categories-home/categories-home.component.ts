@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { CategoryAdapt } from '../../../core/modals/category';
 import { CategoryService } from '../../../core/services/category.service';
@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
   templateUrl: './categories-home.component.html',
   styleUrl: './categories-home.component.css'
 })
-export class CategoriesHomeComponent {
+export class CategoriesHomeComponent implements OnDestroy
+ {
   
    categories!:CategoryAdapt[]
   subscription!: Subscription;
@@ -59,6 +60,10 @@ private readonly _router=inject(Router)
    
 goToCategory(categoryId: string) {
   this._router.navigate(['/category', categoryId]);
+}
+
+ngOnDestroy(): void {
+  this.subscription.unsubscribe()
 }
 
 }
