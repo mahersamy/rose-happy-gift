@@ -11,7 +11,27 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+      mainColor:"#F82BA9",
+      secondColor:"#FEEDF7",
+      iconsColor:"#8C52FF",
+      textColorMain:"#160E4B",
+      textColorSecondry:"#757F95",
+      priceColor:"#F05454"
+      
+    }
+    },
+    container: {
+      center: true, 
+       screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1240px',
+       },
+    },
+    
   },
   plugins: [PrimeUI],
 };

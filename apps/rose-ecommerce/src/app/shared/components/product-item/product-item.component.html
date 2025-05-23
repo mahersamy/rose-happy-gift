@@ -1,0 +1,27 @@
+
+
+    <div class="productItem">
+        <div class="card bg-secondColor relative p-7 flex justify-center rounded-3xl group ">
+            <img   alt="Card" [src]="product.imageCover" />
+            <div class=" overlay opacity-0 absolute inset-0 flex justify-center items-center bg-mainColor rounded-3xl group-hover:opacity-70 duration-1000">
+                <div class="icons text-white">
+                    <i class="fa-solid fa-eye p-2 rounded-full mr-3 bg-pink-700 cursor-pointer"></i>
+                    <i class="fa-regular fa-heart p-2 rounded-full bg-pink-700 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="details flex justify-between items-center">
+        <div class="text-left m-3">
+            <p class="text-textColorMain font-extrabold">{{product.title}}</p>
+            <p-rating class="my-3 text-yellow-100 " [(ngModel)]="product.ratingsAverage" [readonly]="true" /> 
+            <p class="text-priceColor font-bold">{{product.price|currency:"$"}}</p>
+
+            </div>
+            <div class="right m-4 cursor-pointer">
+                <i class="fa-solid fa-cart-shopping text-white p-2 rounded-full bg-iconsColor"></i>
+            </div>
+        </div>
+
+    </div> 
+  
