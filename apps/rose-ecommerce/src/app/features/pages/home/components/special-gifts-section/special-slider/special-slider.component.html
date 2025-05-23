@@ -1,0 +1,13 @@
+<owl-carousel-o [options]="customOptions">
+  @for (item of sliderItems; track $index) {
+  <ng-template carouselSlide>
+    <app-carousel-item 
+    [head]="item.head"
+    [descrption]="item.description"
+    [headerTitle]="item.headerTitle"
+    [img]="item.img"
+    ></app-carousel-item>
+  </ng-template>
+  }
+ 
+</owl-carousel-o>

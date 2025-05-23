@@ -1,0 +1,15 @@
+<section class="features-section p-4 max-w-screen-xl mx-auto container">
+  <div class="bg-color-pink-6 rounded-[1.25rem]">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center gap-8 p-10"
+    >
+      @for (item of featureItems; track $index) {
+      <app-feature-item
+        [img]="item.img"
+        [head]="item.head"
+        [desc]="item.description"
+      ></app-feature-item>
+      }
+    </div>
+  </div>
+</section>
