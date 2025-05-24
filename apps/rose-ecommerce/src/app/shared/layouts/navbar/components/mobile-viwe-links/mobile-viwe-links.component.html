@@ -1,0 +1,36 @@
+@if(hidden()){
+  <div class="mobile-veiwe md:hidden">
+  <div class="bg-[#00000080] fixed w-full h-full z-50">
+    <div class="links bg-white w-fit min-w-[14.6875rem]">
+      <div class="head flex justify-between items-center p-2">
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center p-2 space-x-3 rtl:space-x-reverse"
+        >
+          <img src="/icons/logo.png" alt="image for logo" class="" />
+        </a>
+        <div class="rounded-[50%] p-4 border border-1  border-[#00000014] w-10 h-10 flex justify-center items-center "
+        role="button"
+        (click)="handelCloseBtn()"
+        >
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </div>
+      </div>
+      <ul class="flex flex-col p-4 gap-6 font-medium">
+        <li>
+          <a class="color-navy-1 color-pink-1" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a class="color-navy-1">All Category</a>
+        </li>
+        <li>
+          <a class="color-navy-1">About</a>
+        </li>
+        <li>
+          <a class="color-navy-1">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+}
