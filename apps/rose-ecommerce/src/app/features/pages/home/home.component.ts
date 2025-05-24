@@ -7,10 +7,11 @@ import { AboutSectionComponent } from "../../../shared/components/presentation/a
 import { TrustCompaniesComponent } from './components/trust-companies/trust-companies.component';
 import { GridCarouselComponent } from './components/special-gifts-section/grid-carousel/grid-carousel.component';
 import { NavbarComponent } from "../../../shared/layouts/navbar/navbar.component";
+import { GallerySectionComponent } from "./components/gallery-section/gallery-section.component";
 
 @Component({
   selector: 'app-home',
-  imports: [PopularItemsComponent, CategoriesHomeComponent, TrustCompaniesComponent, GridCarouselComponent, FeaturesComponent, AboutSectionComponent, NavbarComponent],
+  imports: [PopularItemsComponent, CategoriesHomeComponent, TrustCompaniesComponent, GridCarouselComponent, FeaturesComponent, AboutSectionComponent, NavbarComponent, GallerySectionComponent],
  
    templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
