@@ -2,10 +2,10 @@ import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {  AllProductResponseAdapt, ProductResponseAdapt } from '../../../core/modals/product';
 import { ProductService } from '../../../core/services/product.service';
-import { ProductItemComponent } from "../../../shared/components/product-item/product-item.component";
-import { CategoriesHomeComponent } from "../../../shared/components/categories-home/categories-home.component";
 import { Subscription } from 'rxjs';
 import { CarouselModule } from 'primeng/carousel';
+import { ProductItemComponent } from '../../../shared/components/ui/product-item/product-item.component';
+import { CategoriesHomeComponent } from '../../../shared/components/presentation/categories-home/categories-home.component';
 
 
 @Component({

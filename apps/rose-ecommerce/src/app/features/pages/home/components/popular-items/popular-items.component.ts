@@ -1,11 +1,11 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
-import { ProductItemComponent } from "../../../../../shared/components/product-item/product-item.component";
- import { SectionTitleComponent } from "../../../../../shared/components/section-title/section-title.component";
+ import { SectionTitleComponent } from "../../../../../shared/components/ui/section-title/section-title.component";
 import { AllProductResponseAdapt, ProductResponse, ProductResponseAdapt } from 'apps/rose-ecommerce/src/app/core/modals/product';
 import { ProductService } from 'apps/rose-ecommerce/src/app/core/services/product.service';
 import { CarouselModule } from 'primeng/carousel';
 import { CommonModule } from '@angular/common';
-import { CategoriesComponent } from "../../../../../shared/components/categories_popular/categories.component";
+import { CategoriesComponent } from "../../../../../shared/components/presentation/categories_popular/categories.component";
+import { ProductItemComponent } from 'apps/rose-ecommerce/src/app/shared/components/ui/product-item/product-item.component';
  
 @Component({
   selector: 'app-popular-items',

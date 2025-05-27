@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SectionTitleComponent } from "../../../../../shared/components/section-title/section-title.component";
+import { SectionTitleComponent } from "../../../../../shared/components/ui/section-title/section-title.component";
 
 @Component({
   selector: 'app-gallery-section',

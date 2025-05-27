@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core';
   selector: 'app-section-title',
   imports: [],
   templateUrl: './section-title.component.html',
-  styleUrl: './section-title.component.css'
+  styleUrl: './section-title.component.sass'
 })
 export class SectionTitleComponent {
   title=input.required<string>()
