@@ -12,7 +12,6 @@ import { environment } from '../environment/environment';
   providedIn: 'root'
 })
 export class ProductService implements products {
-     
       private readonly _HttpClient=inject(HttpClient)
       private readonly _adapter=inject(MainAdapterService)
  

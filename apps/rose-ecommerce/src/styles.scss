@@ -3,70 +3,7 @@
 @tailwind utilities;
 
   
-/* You can add global styles to this file, and also import other style files */
 
-// Pink shades
-$pink-1: #F82BA9;
-$pink-2: #F84CBF;
-$pink-3: #F87CD1;
-$pink-4: #F8A6DE;
-$pink-5: #F8C7E9;
-$pink-6: #FEEDF7;
-
-// Navy shades
-$navy-1: #160E4B;
-$navy-2: #23235B;
-$navy-3: #2C2C77;
-$navy-4: #3B3B8F;
-$navy-5: #5C5CA8;
-$navy-6: #A6A6C3;
-
-// Purple shades
-$purple-1: #8C52FF;
-$purple-2: #8B5CF6;
-$purple-3: #A78BFA;
-$purple-4: #C4B5FD;
-$purple-5: #DDD6FE;
-$purple-6: #EDE9FE;
-
-// Green shades
-$green-1: #34D399;
-$green-2: #6EE7B7;
-$green-3: #A7F3D0;
-$green-4: #D1FAE5;
-$green-5: #ECFDF5;
-$green-6: #F0FDF4;
-
-.bg-color-pink-1 {
-  background-color: $pink-1;
-}
-.bg-color-purple-1 {
-  background-color: $purple-1;
-}
-.bg-color-pink-6 {
-  background-color: $pink-6;
-}
-.bg-color-navy-1 {
-  background-color: $navy-1;
-}
-
-
-
-.border-color-pink-1{
-  border-color: $pink-1;
-}
-
-.color-pink-1 {
-  color: $pink-1;
-}
-
-.color-pink-6{
-    color: $pink-6;
-}
-
-.color-navy-1{
-    color: $navy-1;
-}
  
 
 // grid slider css in special gift section
@@ -85,7 +22,7 @@ $green-6: #F0FDF4;
 .owl-dots span{
     width: 7px !important;
     height: 7px !important;
-    background-color: #F82BA9 !important;
+    @apply bg-mainColor;
 }
 
 .owl-dot.active span {
