@@ -18,7 +18,8 @@ module.exports = {
       iconsColor:"#8C52FF",
       textColorMain:"#160E4B",
       textColorSecondry:"#757F95",
-      priceColor:"#F05454"
+      priceColor:"#F05454",
+      purpleColorMain:"#8C52FF",
       
     }
     },
