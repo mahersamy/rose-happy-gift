@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from './core/services/translation.service';
    
 @Component({
   imports: [RouterModule],
@@ -8,5 +9,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  private readonly _translationService = inject(TranslationService);
   title = 'rose-ecommerce';
 }

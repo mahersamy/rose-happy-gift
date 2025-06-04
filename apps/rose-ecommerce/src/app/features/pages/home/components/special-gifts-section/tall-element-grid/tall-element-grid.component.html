@@ -11,13 +11,13 @@
     class="absolute z-10 flex flex-col justify-start items-start text-start px-4 py-6"
   >
     <div class="text-mainColor font-bold tracking-widest text-sm md:text-base">
-      Start $10.99      
+      {{ 'tallElementGrid.price' | translate }}
     </div>
     <div
       class="font-semibold text-xl md:text-[1.6306rem] leading-8 text-textColorMain max-w-[13.25rem] my-3"
     >
-      Special Gifts Box For Your Love
+      {{ 'tallElementGrid.title' | translate }}
     </div>
-    <app-main-button text="Shop Now"></app-main-button>
+    <app-main-button [text]="'tallElementGrid.button' | translate"></app-main-button>
   </div>
 </div>

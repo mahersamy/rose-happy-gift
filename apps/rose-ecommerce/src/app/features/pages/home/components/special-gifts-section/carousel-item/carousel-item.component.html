@@ -14,7 +14,9 @@
     <div class="text-gray-600 sm:mb-6 mb-1 max-w-md">
       {{ descrption() }}
     </div>
-    <app-main-button text="Shop Now"></app-main-button>
+    <app-main-button
+      [text]="'tallElementGrid.button' | translate"
+    ></app-main-button>
   </div>
   <div class="flex-1 flex items-center justify-center relative">
     <img

@@ -1,7 +1,7 @@
- <section class="container ">
+<section class="container ">
     <div class="header lg:flex justify-between items-center mb-10">
         <div class="sectionTitle">
-            <app-section-title title="Popular Items"/>
+            <app-section-title title="{{ 'popularItemsTitle' | translate }}"/>
         </div>
         <div class="category mt-10 lg:w-1/2">
            <app-categories  (catId)="handleProductsByCategory($event)"/>     
@@ -13,7 +13,7 @@
         }
         @empty {
           <div class="flex justify-center items-center font-extrabold h-svh w-svw">
-            <p>No items found in this category</p>
+            <p>{{ 'noItemsFound' | translate }}</p>
           </div>
         }
     </div>
@@ -37,7 +37,7 @@
       </p-carousel>
     }@empty {
           <div class="flex justify-center items-center font-extrabold h-svh w-svw">
-            <p>No items found in this category</p>
+            <p>{{ 'noItemsFound' | translate }}</p>
           </div>
         }
     </div>
