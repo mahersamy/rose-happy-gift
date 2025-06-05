@@ -1,6 +1,14 @@
-import { inject, Injectable, PLATFORM_ID, signal, Signal, WritableSignal } from '@angular/core';
+import {
+  inject,
+  Injectable,
+  PLATFORM_ID,
+  signal,
+  Signal,
+  WritableSignal,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { isPlatformBrowser } from '@angular/common';
+import { firstValueFrom, map, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -10,15 +18,19 @@ export class TranslationService {
   private platformId = inject(PLATFORM_ID);
   defaultLang: WritableSignal<string> = signal<string>('en');
 
-  constructor() {
-    if (isPlatformBrowser(this.platformId)) {
-      const savedLang = localStorage.getItem('lng');
+  init() {
+    const isBrowser = isPlatformBrowser(this.platformId);
+    let savedLang:string="";
+    if (isBrowser) {
+      savedLang = localStorage.getItem('lng') || this.defaultLang();
       if (savedLang) {
         this.defaultLang.set(savedLang);
       }
-      this.translateService.setDefaultLang(this.defaultLang());
-      this.translateService.use(this.defaultLang());
+     
     }
+    this.translateService.setDefaultLang(this.defaultLang());
+
+    this.translateService.use(this.defaultLang());
     this.changeDir(this.defaultLang());
   }
 
