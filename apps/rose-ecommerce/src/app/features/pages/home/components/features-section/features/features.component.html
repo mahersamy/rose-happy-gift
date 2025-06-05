@@ -6,8 +6,8 @@
       @for (item of featureItems; track $index) {
       <app-feature-item
         [img]="item.img"
-        [head]="item.head"
-        [desc]="item.description"
+        [head]="item.head | translate"
+        [desc]="item.description | translate"
       ></app-feature-item>
       }
     </div>

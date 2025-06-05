@@ -1,0 +1,91 @@
+{
+  "navbar": {
+    "home": "Home",
+    "all_category": "All Category",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "footer": {
+    "trusted_by": "Trusted By Over 4.5k+ Companies"
+  },
+  "about_us": {
+    "title": "About Us",
+    "description": "We Provide Best And Quality <span class=\"text-mainColor\">Gifts Box</span> Product For You",
+    "discover_more": "Discover More",
+    "paragraph":"Recusandae tempora aut laborum molestias veniam. A commodi sequi accusantium ullam cupiditate. Neque quidem qui et autem dolor dicta necessitatibus ut ad.",
+    "point_1": "Streamlined Shipping Experience",
+    "point_2": "Competitive Price & Easy To Shop",
+    "point_3": "Affordable Modern Design",
+    "point_4": "We Made Awesome Products"
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "subtitle": "Let's Check Our Photo Gallery"
+  },
+  "giftsBox": {
+    "head": "Gifts Box",
+    "description": "Awesome Gifts Box Collections",
+    "badgeText": "Discover Now"
+  },
+  "occasionGifts": {
+    "head": "Occasion Gifts",
+    "description": "Best Occasion Gifts Collections",
+    "badgeText": "Discover Now"
+  },
+  "comboSets": {
+    "head": "Occasion Gifts",
+    "description": "Combo Sets Gift Box Up To 50% Off",
+    "badgeText": "Discover Now"
+  },
+  "slider": [
+    {
+      "head": "Choose Perfect <span class=\"color-pink-1\">Gifts</span> From Us",
+      "description": "Quisquam, voluptates. Repellendus, voluptatum. Quidem, voluptatibus Quisquam, voluptates",
+      "headerTitle": "BEST GIFT SHOP"
+    },
+    {
+      "head": "Choose Perfect <span class=\"color-pink-1\">Gifts</span> From Us",
+      "description": "Quisquam, voluptates. Repellendus, voluptatum. Quidem, voluptatibus Quisquam, voluptates",
+      "headerTitle": "BEST GIFT SHOP"
+    },
+    {
+      "head": "Choose Perfect <span class=\"color-pink-1\">Gifts</span> From Us",
+      "description": "Quisquam, voluptates. Repellendus, voluptatum. Quidem, voluptatibus Quisquam, voluptates",
+      "headerTitle": "BEST GIFT SHOP"
+    },
+    {
+      "head": "Choose Perfect <span class=\"color-pink-1\">Gifts</span> From Us",
+      "description": "Quisquam, voluptates. Repellendus, voluptatum. Quidem, voluptatibus Quisquam, voluptates",
+      "headerTitle": "BEST GIFT SHOP"
+    }
+  ],
+  "tallElementGrid": {
+    "price": "Start $10.99",
+    "title": "Special Gifts Box For Your Love",
+    "button": "Shop Now"
+  },
+  "features": [
+    {
+      "head": "Free Delivery",
+      "description": "Orders Over $120"
+    },
+    {
+      "head": "Get Refund",
+      "description": "Within 30 Days Returns"
+    },
+    {
+      "head": "Safe Payment",
+      "description": "100% Secure Payment"
+    },
+    {
+      "head": "24/7 Support",
+      "description": "Feel Free To Call Us"
+    }
+  ],
+  "popularItemsTitle": "Popular Items",
+  "noItemsFound": "No items found in this category",
+  "trustedBy": "Trusted By",
+  "overCompanies": "Over <span class=\"text-mainColor\">4.5k+</span> Companies",
+  "langSwitch": "العربيه"
+}

@@ -2,9 +2,9 @@
   @for (item of sliderItems; track $index) {
   <ng-template carouselSlide>
     <app-carousel-item 
-    [head]="item.head"
-    [descrption]="item.description"
-    [headerTitle]="item.headerTitle"
+    [head]="item.head | translate"
+    [descrption]="item.description | translate"
+    [headerTitle]="item.headerTitle | translate"
     [img]="item.img"
     ></app-carousel-item>
   </ng-template>

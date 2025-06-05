@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { CategoriesComponent } from '../../../../../shared/components/presentation/categories_popular/categories.component';
 import { ProductItemComponent } from 'apps/rose-ecommerce/src/app/shared/components/ui/product-item/product-item.component';
 import { Subject, takeUntil } from 'rxjs';
+import { TranslatePipe } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-popular-items',
@@ -19,6 +21,7 @@ import { Subject, takeUntil } from 'rxjs';
     CommonModule,
     CategoriesComponent,
     CarouselModule,
+    TranslatePipe
   ],
   templateUrl: './popular-items.component.html',
   styleUrl: './popular-items.component.css',

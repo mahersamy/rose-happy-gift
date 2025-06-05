@@ -13,10 +13,10 @@
 
   @for (item of gridBottomItems; track $index) {
     <app-bottom-grid-card
-    [head]="item.head"
-    [desc]="item.description"
-    [badgeText]="item.badgeText"
-    [img]="item.img"
+    [head]="item.head | translate"
+    [desc]="item.description | translate"
+    [badgeText]="item.badgeText | translate"
+    [img]="item.img | translate"
     ></app-bottom-grid-card>
   }
 </section>

@@ -3,28 +3,26 @@
     <app-about-image></app-about-image>
     <div class="content flex flex-col">
       <div class="text-mainColor font-bold tracking-widest text-sm md:text-base">
-        About Us
+        {{"about_us.title" | translate}}
       </div>
       <div
         class="font-bold text-xl md:text-[1.6306rem] leading-8 text-navy-900 mt-6 mb-2"
-      >
-        We Provide Best And Quality <span class="text-mainColor">Gifts Box</span
-        > Product For You
+        [innerHTML]="'about_us.description' | translate"
+        >
+        
       </div>
 
       <p>
-        Recusandae tempora aut laborum molestias veniam. A commodi sequi
-        accusantium ullam cupiditate. Neque quidem qui et autem dolor dicta
-        necessitatibus ut ad.
+      {{"about_us.paragraph" | translate}}
       </p>
-      <app-main-button class="mt-6" text="Discover More "></app-main-button>
+      <app-main-button class="mt-6" [text]="'about_us.discover_more' | translate"></app-main-button>
       <div
         class="cheack-section flex flex-col justify-start items-start gap-4 mt-6"
       >
         <div class="cirucalr-item grid grid-cols-1  sm:grid-cols-2  gap-4">
           @for (item of doneTextArr; track $index) {
             
-            <app-done-circular [text]="item"></app-done-circular>
+            <app-done-circular [text]="item | translate"></app-done-circular>
 
           }
          
@@ -37,4 +35,3 @@
   </div>
 </section>
 
-<!-- flex flex-col md:flex-row -->

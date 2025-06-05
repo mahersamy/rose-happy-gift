@@ -3,6 +3,7 @@ import { TallElementGridComponent } from '../tall-element-grid/tall-element-grid
 import { BottomGridCardComponent } from '../bottom-grid-card/bottom-grid-card.component';
 import { SpecialSliderComponent } from '../special-slider/special-slider.component';
 import { GridBottomItem } from 'apps/rose-ecommerce/src/app/features/interfaces/grid-bottom-item';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-grid-carousel',
@@ -10,6 +11,7 @@ import { GridBottomItem } from 'apps/rose-ecommerce/src/app/features/interfaces/
     SpecialSliderComponent,
     TallElementGridComponent,
     BottomGridCardComponent,
+    TranslatePipe
   ],
   templateUrl: './grid-carousel.component.html',
   styleUrl: './grid-carousel.component.scss',
@@ -17,21 +19,21 @@ import { GridBottomItem } from 'apps/rose-ecommerce/src/app/features/interfaces/
 export class GridCarouselComponent {
   gridBottomItems:Array<GridBottomItem>= [
     {
-      head: 'Gifts Box',
-      description: 'Awesome Gifts BoxCollectons',
-      badgeText: 'Discover Now',
+      head: 'giftsBox.head',
+      description: 'giftsBox.description',
+      badgeText: 'giftsBox.badgeText',
       img: '/images/Confetti-lying-near-present.png',
     },
     {
-      head: 'Occasion Gifts',
-      description: 'Best Occasion Gifts Collections',
-      badgeText: 'Discover Now',
+      head: 'occasionGifts.head',
+      description: 'occasionGifts.description',
+      badgeText: 'occasionGifts.badgeText',
       img: '/images/Top-view-hand-holding-gift-box-on-work-space.png',
     },
     {
-      head: 'Occasion Gifts',
-      description: 'Best Occasion Gifts Collections',
-      badgeText: 'Discover Now',
+      head: 'comboSets.head',
+      description: 'comboSets.description',
+      badgeText: 'comboSets.badgeText',
       img: '/images/Christmas-shopping-composition-with-presents-and-cart.png',
     },
   ];
