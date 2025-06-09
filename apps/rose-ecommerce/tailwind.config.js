@@ -6,7 +6,8 @@ const { join } = require('path');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+    darkMode: ['selector', '[class~="my-app-dark"]'],           //dark mode configuration
+content: [
     join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
@@ -20,6 +21,15 @@ module.exports = {
       textColorSecondry:"#757F95",
       priceColor:"#F05454",
       purpleColorMain:"#8C52FF",
+      dark:{
+      mainColor:"#FBEAEA",
+      secondColor:"#3F3F46",
+      iconsColor:"#CD2E33",
+      textColorMain:"#160E4B",
+      textColorSecondry:"#757F95",
+      priceColor:"#F05454",
+      purpleColorMain:"#8C52FF",
+      }
       
     }
     },
