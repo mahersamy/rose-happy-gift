@@ -13,13 +13,13 @@
         > 
         <ng-template let-category pTemplate="item">
 
-            <div class="flex items-center justify-around  p-4 rounded-lg bg-secondColor m-4 text-center shadow-md transition hover:scale-105 duration-300 cursor-pointer " (click)="goToCategory(category.id)">
+            <div class="flex items-center justify-around  p-4 rounded-lg bg-secondColor dark:bg-dark-secondColor my-app-dark:bg-dark-secondColor m-4 text-center shadow-md transition hover:scale-105 duration-300 cursor-pointer " (click)="goToCategory(category.id)">
                         <div class="bg-white rounded-full p-3 w-16 h-16  ">
                             <img [src]="category.image" class="w-full h-full" alt="">
                         </div>
                         <div class="">
-                            <div class="font-bold text-textColorMain">{{ category.name }}</div>
-                            <div class="text-sm text-textColorSecondry">{{ category.productsCount }} Items</div>
+                            <div class="font-bold text-textColorMain dark:text-white ">{{ category.name }}</div>
+                            <div class="text-sm text-textColorSecondry dark:text-white">{{ category.productsCount }} Items</div>
                     </div>
             </div>
         </ng-template>
